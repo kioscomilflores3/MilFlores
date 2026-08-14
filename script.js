@@ -108,7 +108,7 @@ const productos = {
 
     {
         nombre: "Superpancho",
-        precio: 1600
+        precio: 2000
     }
 ],
     sandwiches: [
@@ -144,11 +144,11 @@ const productos = {
     }
 ],
     postres: [
-        { nombre: "Chocotorta", precio: 3500 },
-        { nombre: "Postre Oreo", precio: 3500 },
-        { nombre: "Cheesecake", precio: 3500 },
-        { nombre: "Tiramisú", precio: 3500 },
-        { nombre: "Flan", precio: 2500 }
+        { nombre: "Chocotorta", precio: 3800 },
+        { nombre: "Postre Oreo", precio: 3800 },
+        { nombre: "Cheesecake", precio: 3800 },
+        { nombre: "Tiramisú", precio: 3800 },
+        { nombre: "Flan", precio: 3000 }
     ]
 };
 
