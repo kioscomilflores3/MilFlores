@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Mil Flores - Racing Club</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="marca">
+
+        <img
+        src="img/escudo-racing.png"
+        alt="Escudo de Racing">
+
+        <div>
+
+            <h1>MIL FLORES</h1>
+
+            <h2>RACING CLUB</h2>
+
+        </div>
+
+    </div>
+
+    <button id="boton-carrito">
+
+        🛒 <span id="contador">0</span>
+
+    </button>
+
+</header>
+
+<div id="estado"></div>
+
+<section class="categorias">
+
+    <button data-categoria="menu">
+        🍽️ Menú
+    </button>
+
+    <button data-categoria="minutas">
+        🍟 Minutas
+    </button>
+
+    <button data-categoria="sandwiches">
+        🥪 Sándwiches
+    </button>
+
+    <button data-categoria="postres">
+        🍰 Postres
+    </button>
+
+</section>
+
+<section id="productos">
+
+</section>
+
+<div id="ventana-carrito">
+
+    <div class="contenido-carrito">
+
+        <h2>🛒 Mi pedido</h2>
+
+        <div id="lista-carrito">
+
+        </div>
+
+        <h3 id="total">
+
+            Total: $0
+
+        </h3>
+
+       <button id="enviar-pedido">
+
+    Enviar pedido
+
+</button>
+
+<div id="formulario-pedido">
+
+    <h3>📝 Datos del pedido</h3>
+
+    <input
+    type="text"
+    id="nombre"
+    placeholder="Nombre y apellido">
+
+    <select id="curso">
+
+        <option>1.º A</option>
+        <option>1.º B</option>
+
+        <option>2.º A</option>
+        <option>2.º B</option>
+
+        <option>3.º A</option>
+        <option>3.º B</option>
+
+        <option>4.º A</option>
+        <option>4.º B</option>
+
+        <option>5.º A</option>
+        <option>5.º B</option>
+
+        <option>6.º A</option>
+        <option>6.º B</option>
+
+    </select>
+
+    <select id="pago">
+
+        <option>Efectivo</option>
+
+        <option>Transferencia</option>
+
+    </select>
+
+    <textarea
+    id="indicaciones"
+    placeholder="Indicaciones sobre el pedido"></textarea>
+
+    <button id="confirmar-whatsapp">
+
+        Enviar a WhatsApp
+
+    </button>
+
+</div>
+
+<button id="cerrar-carrito">
+
+    Cerrar
+
+</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
