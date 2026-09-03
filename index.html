@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
-<title>Mil Flores - Racing Club</title>
+    <title>Mil Flores - Racing Club</title>
 
-<link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 
 </head>
 
@@ -33,7 +33,7 @@ content="width=device-width, initial-scale=1.0">
 
     </div>
 
-    <button id="boton-carrito">
+    <button id="boton-carrito" type="button" aria-label="Abrir carrito">
 
         🛒 <span id="contador">0</span>
 
@@ -41,41 +41,53 @@ content="width=device-width, initial-scale=1.0">
 
 </header>
 
-<div id="estado"></div>
+<div id="estado" role="status"></div>
 
-<section class="categorias">
+<section class="categorias" aria-label="Categorías">
 
-    <button data-categoria="menu">
+    <button data-categoria="menu" type="button">
         🍽️ Menú
     </button>
 
-    <button data-categoria="minutas">
+    <button data-categoria="minutas" type="button">
         🍟 Minutas
     </button>
 
-    <button data-categoria="sandwiches">
+    <button data-categoria="sandwiches" type="button">
         🥪 Sándwiches
     </button>
 
-    <button data-categoria="postres">
+    <button data-categoria="postres" type="button">
         🍰 Postres
     </button>
 
 </section>
 
-<section id="productos">
+<main id="productos"></main>
 
-</section>
 
 <div id="ventana-carrito">
 
     <div class="contenido-carrito">
 
-        <h2>🛒 Mi pedido</h2>
+        <div class="cabecera-carrito">
 
-        <div id="lista-carrito">
+            <h2>🛒 Mi pedido</h2>
+
+            <button
+            id="cerrar-carrito-x"
+            type="button"
+            aria-label="Cerrar">
+
+                ✕
+
+            </button>
 
         </div>
+
+
+        <div id="lista-carrito"></div>
+
 
         <h3 id="total">
 
@@ -83,72 +95,88 @@ content="width=device-width, initial-scale=1.0">
 
         </h3>
 
-       <button id="enviar-pedido">
 
-    Enviar pedido
+        <button
+        id="enviar-pedido"
+        type="button">
 
-</button>
+            Continuar con el pedido
 
-<div id="formulario-pedido">
+        </button>
 
-    <h3>📝 Datos del pedido</h3>
 
-    <input
-    type="text"
-    id="nombre"
-    placeholder="Nombre y apellido">
+        <div id="formulario-pedido">
 
-    <select id="curso">
+            <h3>📝 Datos del pedido</h3>
 
-        <option>1.º A</option>
-        <option>1.º B</option>
 
-        <option>2.º A</option>
-        <option>2.º B</option>
-        <option>2.º C</option>
-        
-        <option>3.º A</option>
-        <option>3.º B</option>
+            <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre y apellido">
 
-        <option>4.º A</option>
-        <option>4.º B</option>
 
-        <option>5.º A</option>
-        <option>5.º B</option>
+            <select id="curso">
 
-        <option>6.º A</option>
-        <option>6.º B</option>
+                <option>1.º A</option>
+                <option>1.º B</option>
 
-    </select>
+                <option>2.º A</option>
+                <option>2.º B</option>
+                <option>2.º C</option>
 
-    <select id="pago">
+                <option>3.º A</option>
+                <option>3.º B</option>
 
-        <option>Efectivo</option>
+                <option>4.º A</option>
+                <option>4.º B</option>
 
-        <option>Transferencia</option>
+                <option>5.º A</option>
+                <option>5.º B</option>
 
-    </select>
+                <option>6.º A</option>
+                <option>6.º B</option>
 
-    <textarea
-    id="indicaciones"
-    placeholder="Indicaciones sobre el pedido"></textarea>
+            </select>
 
-    <button id="confirmar-whatsapp">
 
-        Enviar a WhatsApp
+            <select id="pago">
 
-    </button>
+                <option>Efectivo</option>
 
-</div>
+                <option>Transferencia</option>
 
-<button id="cerrar-carrito">
+            </select>
 
-    Cerrar
 
-</button>
+            <textarea
+            id="indicaciones"
+            placeholder="Indicaciones sobre el pedido"></textarea>
+
+
+            <button
+            id="confirmar-whatsapp"
+            type="button">
+
+                Enviar a WhatsApp
+
+            </button>
+
+        </div>
+
+
+        <button
+        id="cerrar-carrito"
+        type="button">
+
+            Cerrar
+
+        </button>
+
     </div>
 
 </div>
+
 
 <script src="script.js"></script>
 
