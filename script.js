@@ -1,338 +1,575 @@
 const productos = {
+
     menu: [
-    {
-        nombre: "Suprema napolitana",
-        precio: 7500,
-        bebida: true,
-        acompanamiento: true
-    },
 
-    {
-        nombre: "Milanesa de carne",
-        precio: 7500,
-        bebida: true,
-        acompanamiento: true
-    },
+        {
+            nombre: "Suprema napolitana",
+            precio: 7500,
+            imagen: "img/suprema-napolitana.png",
+            bebida: true,
+            acompanamiento: true
+        },
 
-    {
-        nombre: "Milanesa de pollo",
-        precio: 7500,
-        bebida: true,
-        acompanamiento: true
-    },
+        {
+            nombre: "Milanesa de carne",
+            precio: 7500,
+            imagen: "img/milanesa-carne.png",
+            bebida: true,
+            acompanamiento: true
+        },
 
-    {
-        nombre: "Churrasquito de carne",
-        precio: 7500,
-        bebida: true,
-        acompanamiento: true
-    },
+        {
+            nombre: "Milanesa de pollo",
+            precio: 7500,
+            imagen: "img/milanesa-pollo.png",
+            bebida: true,
+            acompanamiento: true
+        },
 
-    {
-        nombre: "Churrasquito de pollo",
-        precio: 7500,
-        bebida: true,
-        acompanamiento: true
-    },
+        {
+            nombre: "Churrasquito de carne",
+            precio: 7500,
+            imagen: "img/churrasquito-carne.png",
+            bebida: true,
+            acompanamiento: true
+        },
 
-    {
-        nombre: "Hamburguesa c/ fritas",
-        precio: 7000,
-        bebida: true,
-        ingredientes: [
-            "Jamón",
-            "Queso",
-            "Queso cheddar"
-        ]
-    },
+        {
+            nombre: "Churrasquito de pollo",
+            precio: 7500,
+            imagen: "img/churrasquito-pollo.png",
+            bebida: true,
+            acompanamiento: true
+        },
 
-    {
-        nombre: "Hamburguesa completa c/ fritas",
-        precio: 7000,
-        bebida: true,
-        ingredientes: [
-            "Lechuga",
-            "Tomate",
-            "Jamón",
-            "Queso"
-        ]
-    }
-],
+        {
+            nombre: "Hamburguesa c/ fritas",
+            precio: 7000,
+            imagen: "img/hamburguesa.png",
+            bebida: true,
+            ingredientes: [
+                "Jamón",
+                "Queso",
+                "Queso cheddar"
+            ]
+        },
+
+        {
+            nombre: "Hamburguesa completa c/ fritas",
+            precio: 7000,
+            imagen: "img/hamburguesa-completa.png",
+            bebida: true,
+            ingredientes: [
+                "Lechuga",
+                "Tomate",
+                "Jamón",
+                "Queso"
+            ]
+        }
+
+    ],
+
+
     minutas: [
-    {
-        nombre: "Empanadas",
-        precio: 2000,
-        relleno: [
-            "Carne",
-            "Pollo",
-            "Jamón y queso"
-        ],
-        coccion: [
-            "Frita",
-            "Al horno"
-        ]
-    },
 
-    {
-        nombre: "Canastitas",
-        precio: 2500,
-        relleno: [
-            "Verdura con queso",
-            "Calabaza con queso"
-        ]
-    },
+        {
+            nombre: "Empanadas",
+            precio: 2000,
+            imagen: "img/empanadas.png",
+            relleno: [
+                "Carne",
+                "Pollo",
+                "Jamón y queso"
+            ],
+            coccion: [
+                "Frita",
+                "Al horno"
+            ]
+        },
 
-    {
-        nombre: "Porción de tarta",
-        precio: 4000,
-        relleno: [
-            "Verdura",
-            "Jamón y queso"
-        ]
-    },
+        {
+            nombre: "Canastitas",
+            precio: 2500,
+            imagen: "img/canastitas.png",
+            relleno: [
+                "Verdura con queso",
+                "Calabaza con queso"
+            ]
+        },
 
-    {
-        nombre: "Tortilla de papa",
-        precio: 4500
-    },
+        {
+            nombre: "Porción de tarta",
+            precio: 4000,
+            imagen: "img/tarta.png",
+            relleno: [
+                "Verdura",
+                "Jamón y queso"
+            ]
+        },
 
-    {
-        nombre: "Nuggets x8",
-        precio: 3000
-    },
+        {
+            nombre: "Tortilla de papa",
+            precio: 4500,
+            imagen: "img/tortilla-papa.png"
+        },
 
-    {
-        nombre: "Nuggets con fritas",
-        precio: 6000
-    },
+        {
+            nombre: "Nuggets x8",
+            precio: 3000,
+            imagen: "img/nuggets.png"
+        },
 
-    {
-        nombre: "Superpancho",
-        precio: 2000
-    }
-],
+        {
+            nombre: "Nuggets con fritas",
+            precio: 6000,
+            imagen: "img/nuggets-fritas.png"
+        },
+
+        {
+            nombre: "Superpancho",
+            precio: 2000,
+            imagen: "img/superpancho.png"
+        }
+
+    ],
+
+
     sandwiches: [
-    {
-        nombre: "Sándwich de milanesa de carne (jamón y queso)",
-        precio: 6500
-    },
 
-    {
-        nombre: "Sándwich de milanesa de carne (completo)",
-        precio: 7500
-    },
+        {
+            nombre: "Sándwich de milanesa de carne (jamón y queso)",
+            precio: 6500,
+            imagen: "img/sandwich-milanesa-carne.png"
+        },
 
-    {
-        nombre: "Sándwich de milanesa de pollo (jamón y queso)",
-        precio: 6000
-    },
+        {
+            nombre: "Sándwich de milanesa de carne (completo)",
+            precio: 7500,
+            imagen: "img/sandwich-milanesa-completo.png"
+        },
 
-    {
-        nombre: "Sándwich de milanesa de pollo (completo)",
-        precio: 7500
-    },
+        {
+            nombre: "Sándwich de milanesa de pollo (jamón y queso)",
+            precio: 6000,
+            imagen: "img/sandwich-milanesa-pollo.png"
+        },
 
-    {
-        nombre: "Sándwich de fiambre",
-        precio: 3000,
+        {
+            nombre: "Sándwich de milanesa de pollo (completo)",
+            precio: 7500,
+            imagen: "img/sandwich-milanesa-pollo-completo.png"
+        },
 
-        relleno: [
-            "Jamón y queso",
-            "Salame y queso",
-            "Mortadela y queso"
-        ]
-    }
-],
+        {
+            nombre: "Sándwich de fiambre",
+            precio: 3000,
+            imagen: "img/sandwich-fiambre.png",
+            relleno: [
+                "Jamón y queso",
+                "Salame y queso",
+                "Mortadela y queso"
+            ]
+        }
+
+    ],
+
+
     postres: [
-        { nombre: "Chocotorta", precio: 3800 },
-        { nombre: "Postre Oreo", precio: 3800 },
-        { nombre: "Cheesecake", precio: 3800 },
-        { nombre: "Tiramisú", precio: 3800 },
-        { nombre: "Flan", precio: 3000 }
+
+        {
+            nombre: "Chocotorta",
+            precio: 3800,
+            imagen: "img/chocotorta.png"
+        },
+
+        {
+            nombre: "Postre Oreo",
+            precio: 3800,
+            imagen: "img/chocooreo.png"
+        },
+
+        {
+            nombre: "Cheesecake",
+            precio: 3800,
+            imagen: "img/cheesecake.png"
+        },
+
+        {
+            nombre: "Tiramisú",
+            precio: 3800,
+            imagen: "img/tiramisu.png"
+        },
+
+        {
+            nombre: "Flan",
+            precio: 3000,
+            imagen: "img/flan.png"
+        }
+
     ]
+
 };
+
+
+// ELEMENTOS
 
 const estado = document.getElementById("estado");
 const productosHTML = document.getElementById("productos");
 const botones = document.querySelectorAll(".categorias button");
 
-const ventanaCarrito = document.getElementById("ventana-carrito");
-const botonCarrito = document.getElementById("boton-carrito");
-const cerrarCarrito = document.getElementById("cerrar-carrito");
+const ventanaCarrito =
+    document.getElementById("ventana-carrito");
 
-const hora = new Date().getHours();
+const botonCarrito =
+    document.getElementById("boton-carrito");
 
-if (hora >= 11 && hora < 13) {
-    estado.innerHTML = "<h2>🟢 Kiosco abierto</h2>";
-} else {
-    estado.innerHTML =
-        "<h2>🔒 Se toman pedidos hasta las 11:30</h2>";
+const cerrarCarrito =
+    document.getElementById("cerrar-carrito");
+
+const cerrarCarritoX =
+    document.getElementById("cerrar-carrito-x");
+
+
+// HORARIO
+
+function verificarHorario() {
+
+    const ahora = new Date();
+
+    const hora = ahora.getHours();
+    const minutos = ahora.getMinutes();
+
+    const minutosActuales =
+        hora * 60 + minutos;
+
+    const apertura = 7 * 60;
+    const cierre = 11 * 60 + 30;
+
+    const abierto =
+        minutosActuales >= apertura &&
+        minutosActuales < cierre;
+
+    if (abierto) {
+
+        estado.innerHTML =
+            '<div class="estado-abierto">🟢 Kiosco abierto · Se toman pedidos hasta las 11:30</div>';
+
+    } else {
+
+        estado.innerHTML =
+            '<div class="estado-cerrado">🔒 Pedidos cerrados · Se toman pedidos hasta las 11:30</div>';
+
+    }
+
+    document.querySelectorAll(".boton-agregar")
+        .forEach(boton => {
+
+            boton.disabled = !abierto;
+
+        });
+
+    botonCarrito.disabled =
+        !abierto || Object.keys(carrito).length === 0;
+
 }
 
+
+// CATEGORÍAS
+
 botones.forEach((boton) => {
+
     boton.addEventListener("click", () => {
-        mostrarProductos(boton.dataset.categoria);
+
+        mostrarProductos(
+            boton.dataset.categoria
+        );
+
     });
+
 });
+
+
+// MOSTRAR PRODUCTOS
 
 function mostrarProductos(categoria) {
 
     productosHTML.innerHTML = "";
 
-    productos[categoria].forEach((producto) => {
+    productos[categoria].forEach((producto, indice) => {
 
         let opciones = "";
 
+
         if (producto.bebida) {
 
-    opciones += `
+            opciones += `
 
-        <details>
+                <details>
 
-            <summary>▼ Personalizar</summary>
+                    <summary>▼ Personalizar</summary>
 
-            <label>Bebida:</label>
+                    <label>Bebida:</label>
 
-           <select id="bebida-${producto.nombre}">
+                    <select class="opcion-bebida">
 
-    <option>Mini Coca-Cola</option>
+                        <option>Mini Coca-Cola</option>
+                        <option>Mini Fanta</option>
+                        <option>Mini Sprite</option>
 
-    <option>Mini Fanta</option>
+                    </select>
 
-    <option>Mini Sprite</option>
+                    ${
+                        producto.acompanamiento
+                        ? `
 
-</select>
-            ${producto.acompanamiento ? `
+                            <label>Acompañamiento:</label>
 
-                <label>Acompañamiento:</label>
+                            <select class="opcion-acompanamiento">
 
-                <select id="acompanamiento-${producto.nombre}">
+                                <option>Papas fritas</option>
+                                <option>Puré</option>
+                                <option>Arroz</option>
 
-    <option>Papas fritas</option>
+                            </select>
 
-    <option>Puré</option>
+                        `
+                        : ""
+                    }
 
-    <option>Arroz</option>
+                </details>
 
-</select>
-            ` : ""}
+            `;
 
-        </details>
+        }
 
-    `;
-}
-if (producto.relleno || producto.coccion) {
 
-    opciones += `
+        if (producto.relleno || producto.coccion) {
 
-        <details>
+            opciones += `
 
-            <summary>▼ Personalizar</summary>
+                <details>
 
-            ${producto.relleno ? `
+                    <summary>▼ Personalizar</summary>
 
-                <label>Relleno:</label>
+                    ${
+                        producto.relleno
+                        ? `
 
-                <select id="relleno-${producto.nombre}">
+                            <label>Relleno:</label>
 
-    ${producto.relleno.map(opcion =>
-        `<option>${opcion}</option>`
-    ).join("")}
+                            <select class="opcion-relleno">
 
-</select>
-            ` : ""}
+                                ${producto.relleno
+                                    .map(opcion =>
+                                        `<option>${opcion}</option>`
+                                    )
+                                    .join("")
+                                }
 
-            ${producto.coccion ? `
+                            </select>
 
-                <label>Cocción:</label>
+                        `
+                        : ""
+                    }
 
-               <select id="coccion-${producto.nombre}">
 
-    ${producto.coccion.map(opcion =>
-        `<option>${opcion}</option>
-    `).join("")}
+                    ${
+                        producto.coccion
+                        ? `
 
-</select>
-            ` : ""}
+                            <label>Cocción:</label>
 
-        </details>
+                            <select class="opcion-coccion">
 
-    `;
-}
+                                ${producto.coccion
+                                    .map(opcion =>
+                                        `<option>${opcion}</option>`
+                                    )
+                                    .join("")
+                                }
+
+                            </select>
+
+                        `
+                        : ""
+                    }
+
+                </details>
+
+            `;
+
+        }
+
+
         productosHTML.innerHTML += `
 
-            <div class="producto">
+            <article class="producto">
 
-                <h3>${producto.nombre}</h3>
+                ${
+                    producto.imagen
 
-${producto.ingredientes
-    ? `<p>${producto.ingredientes.join(" • ")}</p>`
-    : ""
-}
+                    ? `
 
-<p>$${producto.precio}</p>
+                        <img
+                        class="producto-imagen"
+                        src="${producto.imagen}"
+                        alt="${producto.nombre}"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
 
-                ${opciones}
+                        <div
+                        class="producto-sin-imagen"
+                        style="display:none;">
 
-                <button onclick="agregarProducto('${categoria}-${producto.nombre}')">
+                            🍽️
 
-                    Agregar
+                        </div>
 
-                </button>
+                    `
 
-            </div>
+                    : `
+
+                        <div class="producto-sin-imagen">
+
+                            🍽️
+
+                        </div>
+
+                    `
+                }
+
+
+                <div class="producto-contenido">
+
+                    <h3>
+                        ${producto.nombre}
+                    </h3>
+
+
+                    ${
+                        producto.ingredientes
+
+                        ? `
+
+                            <p class="ingredientes">
+
+                                ${producto.ingredientes.join(" • ")}
+
+                            </p>
+
+                        `
+
+                        : ""
+                    }
+
+
+                    <p class="precio">
+
+                        $${producto.precio}
+
+                    </p>
+
+
+                    ${opciones}
+
+
+                    <button
+                    class="boton-agregar"
+                    type="button"
+                    onclick="agregarProducto('${categoria}', ${indice})">
+
+                        Agregar al pedido
+
+                    </button>
+
+                </div>
+
+            </article>
 
         `;
 
     });
 
-}
-botonCarrito.addEventListener("click", () => {
-    ventanaCarrito.style.display = "flex";
-});
 
-cerrarCarrito.addEventListener("click", () => {
-    ventanaCarrito.style.display = "none";
-});
+    verificarHorario();
+
+}
+
+
+// CARRITO
+
 let carrito = {};
 
-function agregarProducto(id) {
 
-    const categoria = id.split("-")[0];
+botonCarrito.addEventListener("click", () => {
 
-    const nombre = id.substring(categoria.length + 1);
+    if (Object.keys(carrito).length === 0) {
 
-    const producto = productos[categoria].find(
-        p => p.nombre === nombre
-    );
+        return;
+
+    }
+
+    ventanaCarrito.style.display = "flex";
+
+});
+
+
+cerrarCarrito.addEventListener("click", () => {
+
+    ventanaCarrito.style.display = "none";
+
+});
+
+
+cerrarCarritoX.addEventListener("click", () => {
+
+    ventanaCarrito.style.display = "none";
+
+});
+
+
+ventanaCarrito.addEventListener("click", (evento) => {
+
+    if (evento.target === ventanaCarrito) {
+
+        ventanaCarrito.style.display = "none";
+
+    }
+
+});
+
+
+// AGREGAR PRODUCTO
+
+function agregarProducto(categoria, indice) {
+
+    const producto =
+        productos[categoria][indice];
+
+
+    const tarjeta =
+        document.querySelectorAll(".producto")[indice];
+
 
     const bebida =
-        document.getElementById(
-            `bebida-${producto.nombre}`
-        );
+        tarjeta.querySelector(".opcion-bebida");
 
     const acompanamiento =
-        document.getElementById(
-            `acompanamiento-${producto.nombre}`
-        );
+        tarjeta.querySelector(".opcion-acompanamiento");
 
     const relleno =
-        document.getElementById(
-            `relleno-${producto.nombre}`
-        );
+        tarjeta.querySelector(".opcion-relleno");
 
     const coccion =
-        document.getElementById(
-            `coccion-${producto.nombre}`
-        );
+        tarjeta.querySelector(".opcion-coccion");
+
 
     const bebidaElegida =
         bebida ? bebida.value : "";
 
     const acompanamientoElegido =
         acompanamiento
-            ? acompanamiento.value
-            : "";
+        ? acompanamiento.value
+        : "";
 
     const rellenoElegido =
         relleno ? relleno.value : "";
@@ -340,12 +577,20 @@ function agregarProducto(id) {
     const coccionElegida =
         coccion ? coccion.value : "";
 
+
     const idUnico =
-        id +
+        categoria +
+        "-" +
+        indice +
+        "-" +
         bebidaElegida +
+        "-" +
         acompanamientoElegido +
+        "-" +
         rellenoElegido +
+        "-" +
         coccionElegida;
+
 
     if (carrito[idUnico]) {
 
@@ -376,9 +621,14 @@ function agregarProducto(id) {
 
     }
 
+
     actualizarCarrito();
 
 }
+
+
+// ACTUALIZAR CARRITO
+
 function actualizarCarrito() {
 
     const lista =
@@ -390,90 +640,125 @@ function actualizarCarrito() {
     const total =
         document.getElementById("total");
 
+
     lista.innerHTML = "";
+
 
     let cantidadTotal = 0;
 
     let precioTotal = 0;
 
+
     for (let id in carrito) {
 
-        const producto = carrito[id];
+        const producto =
+            carrito[id];
 
-        cantidadTotal += producto.cantidad;
+
+        cantidadTotal +=
+            producto.cantidad;
+
 
         precioTotal +=
             producto.precio *
             producto.cantidad;
 
-      lista.innerHTML += `
 
-    <div class="item-carrito">
+        lista.innerHTML += `
 
-       <strong>
+            <div class="item-carrito">
 
-    ${producto.nombre}
-    (${producto.cantidad})
+                <strong>
 
-</strong>
+                    ${producto.nombre}
+                    × ${producto.cantidad}
 
-${producto.bebida
-    ? `<p>🥤 ${producto.bebida}</p>`
-    : ""
-}
+                </strong>
 
-${producto.acompanamiento
-    ? `<p>🍟 ${producto.acompanamiento}</p>`
-    : ""
-}
-${producto.relleno
-    ? `<p>🥟 ${producto.relleno}</p>`
-    : ""
-}
 
-${producto.coccion
-    ? `<p>🔥 ${producto.coccion}</p>`
-    : ""
-}
+                ${
+                    producto.bebida
+                    ? `<p>🥤 ${producto.bebida}</p>`
+                    : ""
+                }
 
-        <div>
 
-            <button
-            onclick="restarProducto('${id}')">
+                ${
+                    producto.acompanamiento
+                    ? `<p>🍟 ${producto.acompanamiento}</p>`
+                    : ""
+                }
 
-                ➖
 
-            </button>
+                ${
+                    producto.relleno
+                    ? `<p>🥟 ${producto.relleno}</p>`
+                    : ""
+                }
 
-            <button
-            onclick="sumarProducto('${id}')">
 
-                ➕
+                ${
+                    producto.coccion
+                    ? `<p>🔥 ${producto.coccion}</p>`
+                    : ""
+                }
 
-            </button>
 
-            <button
-            onclick="eliminarProducto('${id}')">
+                <div class="controles-carrito">
 
-                🗑️
+                    <button
+                    type="button"
+                    onclick="restarProducto('${id}')">
 
-            </button>
+                        ➖
 
-        </div>
+                    </button>
 
-    </div>
 
-`;
+                    <button
+                    type="button"
+                    onclick="sumarProducto('${id}')">
+
+                        ➕
+
+                    </button>
+
+
+                    <button
+                    type="button"
+                    onclick="eliminarProducto('${id}')">
+
+                        🗑️
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        `;
+
     }
+
 
     contador.textContent =
         cantidadTotal;
 
+
     total.textContent =
         "Total: $" + precioTotal;
 
+
+    verificarHorario();
+
 }
+
+
+// SUMAR
+
 function sumarProducto(id) {
+
+    if (!carrito[id]) return;
 
     carrito[id].cantidad++;
 
@@ -481,9 +766,15 @@ function sumarProducto(id) {
 
 }
 
+
+// RESTAR
+
 function restarProducto(id) {
 
+    if (!carrito[id]) return;
+
     carrito[id].cantidad--;
+
 
     if (carrito[id].cantidad <= 0) {
 
@@ -491,9 +782,13 @@ function restarProducto(id) {
 
     }
 
+
     actualizarCarrito();
 
 }
+
+
+// ELIMINAR
 
 function eliminarProducto(id) {
 
@@ -502,18 +797,45 @@ function eliminarProducto(id) {
     actualizarCarrito();
 
 }
-const botonEnviar = document.getElementById("enviar-pedido");
 
-const formulario = document.getElementById("formulario-pedido");
+
+// FORMULARIO
+
+const botonEnviar =
+    document.getElementById("enviar-pedido");
+
+const formulario =
+    document.getElementById("formulario-pedido");
+
 
 botonEnviar.addEventListener("click", () => {
+
+    if (Object.keys(carrito).length === 0) {
+
+        alert("Agregá al menos un producto.");
+
+        return;
+
+    }
 
     formulario.style.display = "block";
 
 });
-const numeroWhatsApp = "5491138155204";
-document.getElementById("confirmar-whatsapp")
-.addEventListener("click", enviarWhatsApp);
+
+
+// WHATSAPP
+
+const numeroWhatsApp =
+    "5491138155204";
+
+
+document
+    .getElementById("confirmar-whatsapp")
+    .addEventListener(
+        "click",
+        enviarWhatsApp
+    );
+
 
 function enviarWhatsApp() {
 
@@ -529,116 +851,167 @@ function enviarWhatsApp() {
     const indicaciones =
         document.getElementById("indicaciones").value;
 
+
     if (nombre.trim() === "") {
 
-        alert("Ingresá tu nombre y apellido.");
+        alert(
+            "Ingresá tu nombre y apellido."
+        );
 
         return;
+
     }
 
+
+    if (Object.keys(carrito).length === 0) {
+
+        alert(
+            "El carrito está vacío."
+        );
+
+        return;
+
+    }
+
+
     let mensaje =
-        "🛒 NUEVO PEDIDO%0A%0A";
+        "🛒 NUEVO PEDIDO\n\n";
+
 
     mensaje +=
-        "👤 " + nombre + "%0A";
+        "👤 " +
+        nombre +
+        "\n";
+
 
     mensaje +=
-        "🏫 " + curso + "%0A%0A";
+        "🏫 " +
+        curso +
+        "\n\n";
+
 
     let totalPedido = 0;
 
+
     for (let id in carrito) {
 
-        const producto = carrito[id];
+        const producto =
+            carrito[id];
+
 
         mensaje +=
             "🍽️ " +
             producto.nombre +
-            " (" +
+            " × " +
             producto.cantidad +
-            ")%0A";
+            "\n";
+
 
         if (producto.bebida) {
 
             mensaje +=
                 "🥤 " +
                 producto.bebida +
-                "%0A";
+                "\n";
+
         }
+
 
         if (producto.acompanamiento) {
 
             mensaje +=
                 "🍟 " +
                 producto.acompanamiento +
-                "%0A";
+                "\n";
+
         }
+
 
         if (producto.relleno) {
 
             mensaje +=
                 "🥟 " +
                 producto.relleno +
-                "%0A";
+                "\n";
+
         }
+
 
         if (producto.coccion) {
 
             mensaje +=
                 "🔥 " +
                 producto.coccion +
-                "%0A";
+                "\n";
+
         }
 
-        mensaje += "%0A";
+
+        mensaje += "\n";
+
 
         totalPedido +=
             producto.precio *
             producto.cantidad;
+
     }
+
 
     mensaje +=
         "💳 " +
         pago +
-        "%0A";
+        "\n";
+
 
     if (indicaciones.trim() !== "") {
 
         mensaje +=
             "📝 " +
             indicaciones +
-            "%0A";
+            "\n";
+
     }
 
+
     mensaje +=
-        "%0A💰 Total: $" +
+        "\n💰 Total: $" +
         totalPedido;
 
-window.open(
 
-    "https://wa.me/" +
-    numeroWhatsApp +
-    "?text=" +
-    mensaje,
+    window.open(
 
-    "_blank"
+        "https://wa.me/" +
+        numeroWhatsApp +
+        "?text=" +
+        encodeURIComponent(mensaje),
 
-);
+        "_blank"
 
-carrito = {};
+    );
 
-actualizarCarrito();
 
-document.getElementById("nombre").value = "";
+    carrito = {};
 
-document.getElementById("indicaciones").value = "";
+    actualizarCarrito();
 
-document.getElementById("curso").selectedIndex = 0;
 
-document.getElementById("pago").selectedIndex = 0;
+    document.getElementById("nombre").value = "";
 
-document.getElementById("formulario-pedido").style.display =
-    "none";
+    document.getElementById("indicaciones").value = "";
 
-ventanaCarrito.style.display = "none";
-  }
+    document.getElementById("curso").selectedIndex = 0;
+
+    document.getElementById("pago").selectedIndex = 0;
+
+    formulario.style.display = "none";
+
+    ventanaCarrito.style.display = "none";
+
+}
+
+
+// INICIAR
+
+mostrarProductos("menu");
+
+verificarHorario();
